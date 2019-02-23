@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+    <% include partials/nav.ejs %>
+    <h1>This is test page</h1>
+    <h3>Your age is : <%= data.age %></h3>
+    <h3>Your address is : <%= data.address %></h3> 
+
+    <h3>Your hobbies are : 
+        <ul>
+            <% data.hobbies.forEach(function(item){ %>
+                <li><%= item %></li>
+            <% }); %>
+        </ul>
+    </h3>
+</body>
+</html>
